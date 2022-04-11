@@ -16,7 +16,6 @@ export const FeedbackProvider = ({ children }) => {
     function handleDelete(id) {
         console.log(id)
         const newFeedback = feedback.filter(item => item.id !== id)
-        console.log(newFeedback)
         setFeedback(newFeedback)
     }
 
